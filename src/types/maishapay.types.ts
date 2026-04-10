@@ -5,6 +5,8 @@ export interface MaishapayConfig {
   webhookSecret: string;
 }
 
+// une interface reutilisable pour organiser la methode payement approprie pour une requette donnee
+//
 export interface PaymentRequest {
   amount: number;
   currency: string;
@@ -12,7 +14,7 @@ export interface PaymentRequest {
   customerPhone: string;
   customerEmail?: string;
   paymentMethod: 'mobile_money' | 'card' | 'crypto';
-  provider?: 'airtel' | 'mpesa' | 'orange';
+  provider?: 'airtel' | 'mpesa' | 'orange';// un peu comme un fournisseur reseau mobile il est optionnel
   reference: string;
   description?: string;
   redirectUrl?: string;
