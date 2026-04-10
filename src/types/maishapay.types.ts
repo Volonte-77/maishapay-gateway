@@ -29,6 +29,7 @@ export interface TransferRequest {
   reference: string;
 }
 
+//pour les unites airtime en francais meme si bon dans notre cas on ne va apas l'utiliser
 export interface AirtimeRequest {
   phone: string;
   amount: number;
