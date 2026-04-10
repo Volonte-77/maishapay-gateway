@@ -1,3 +1,4 @@
+// une premiere interface pour recuperer en toute securite les api-keys de maichapay
 export interface MaishapayConfig {
   apiKey: string;
   baseUrl: string;
