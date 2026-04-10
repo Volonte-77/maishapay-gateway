@@ -6,7 +6,6 @@ export interface MaishapayConfig {
 }
 
 // une interface reutilisable pour organiser la methode payement approprie pour une requette donnee
-//
 export interface PaymentRequest {
   amount: number;
   currency: string;
@@ -21,6 +20,7 @@ export interface PaymentRequest {
   webhookUrl?: string;
 }
 
+// interface de transfert pour un quelconque montant a transferer
 export interface TransferRequest {
   recipientPhone: string;
   amount: number;
