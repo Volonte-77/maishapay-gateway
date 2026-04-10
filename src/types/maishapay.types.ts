@@ -37,6 +37,7 @@ export interface AirtimeRequest {
   country: string;
 }
 
+//interface pour organiser 
 export interface TransactionStatus {
   transactionId: string;
   status: 'pending' | 'success' | 'failed' | 'processing';
