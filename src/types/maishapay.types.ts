@@ -50,6 +50,7 @@ export interface TransactionStatus {
   updatedAt: Date;
 }
 
+// apres payement, la reponse si c'est un succes ou un fail 
 export interface PaymentResponse {
   success: boolean;
   data?: any;
