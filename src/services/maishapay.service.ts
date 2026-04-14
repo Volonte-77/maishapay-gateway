@@ -79,7 +79,7 @@ export class MaishapayService {
       throw new Error(`Balance check failed: ${error.message}`);
     }
   }
-
+  // une methode pour acheter de l'airtime qui prend en parametre une requette de type AirtimeRequest et qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si l'achat d'airtime echoue
   async buyAirtime(airtime: AirtimeRequest): Promise<any> {
     try {
       const response = await this.client.post('/airtimes', {
