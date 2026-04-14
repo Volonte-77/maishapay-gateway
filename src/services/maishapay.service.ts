@@ -93,7 +93,7 @@ export class MaishapayService {
       throw new Error(`Airtime purchase failed: ${error.message}`);
     }
   }
-
+// methode pour recuperer le status d'une transaction qui prend en parametre l'id de la transaction et qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si la recuperation du status de la transaction echoue
   async getTransactionStatus(transactionId: string): Promise<any> {
     try {
       const response = await this.client.get(`/transaction/${transactionId}`);
