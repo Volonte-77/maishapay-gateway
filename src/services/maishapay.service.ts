@@ -102,7 +102,7 @@ export class MaishapayService {
       throw new Error(`Transaction lookup failed: ${error.message}`);
     }
   }
-
+// methode pour le payement de la TV qui prend en parametre l'id de l'abonnement, le montant a payer, le fournisseur de la TV et le code client et qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si le payement de la TV echoue
   async payTV(subscriptionId: string, amount: number, provider: string, customerCode: string): Promise<any> {
     try {
       const response = await this.client.post('/paytv', {
