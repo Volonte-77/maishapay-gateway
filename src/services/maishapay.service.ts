@@ -70,7 +70,7 @@ export class MaishapayService {
       throw new Error(`Transfer failed: ${error.message}`);
     }
   }
-
+// methode pour recuperer le solde du compte maishapay qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si la recuperation du solde echoue
   async getBalance(): Promise<any> {
     try {
       const response = await this.client.get('/balance');
