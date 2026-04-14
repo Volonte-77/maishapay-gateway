@@ -5,7 +5,7 @@ import { MaishapayConfig, PaymentRequest, TransferRequest, AirtimeRequest } from
 export class MaishapayService {
   private client: AxiosInstance;
   private config: MaishapayConfig;
-
+  // petit constructeur de la class MaishapayService qui prend en parametre une configuration de type MaishapayConfig pour initialiser le client axios avec les bonnes informations de baseUrl et apiKey pour les requettes a l'API de maishapay
   constructor(config: MaishapayConfig) {
     this.config = config;
     this.client = axios.create({
