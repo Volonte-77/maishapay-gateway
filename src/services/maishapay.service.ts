@@ -1,4 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
+// importation de mes interfaces deja definies dans le fichier de types pour les utiliser dans mon service maishapay
 import { MaishapayConfig, PaymentRequest, TransferRequest, AirtimeRequest } from '../types/maishapay.types';
 
 export class MaishapayService {
