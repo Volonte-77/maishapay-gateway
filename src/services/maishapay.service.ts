@@ -55,7 +55,7 @@ export class MaishapayService {
       throw new Error(`Payment creation failed: ${error.message}`);
     }
   }
-
+// methode pour le transfert de fonds qui prend en parametre une requette de type TransferRequest et qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si le transfert echoue
   async transferFunds(transfer: TransferRequest): Promise<any> {
     try {
       const response = await this.client.post('/b2c-transfer', {
