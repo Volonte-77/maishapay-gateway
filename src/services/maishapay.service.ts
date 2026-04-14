@@ -30,7 +30,7 @@ export class MaishapayService {
       }
     );
   }
-
+ // methode asynchrone pour creer les differents types de payement en fonction de la requette qui est de type PaymentRequest et qui retourne une promesse de n'importe quelle reponse de l'API de maishapay ou une erreur si la creation du payement echoue
   async createPayment(payment: PaymentRequest): Promise<any> {
     try {
       const payload = {
